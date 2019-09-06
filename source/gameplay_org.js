@@ -43,10 +43,7 @@ App.Main.prototype = {
 	
 	create : function(){
 		// set scale mode to cover the entire screen
-		// 2019-09-06 TelescopeUser
-		// https://github.com/ssusnic/Machine-Learning-Flappy-Bird/issues/1
-		// this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-		this.scale.scaleMode = Phaser.ScaleManager.NO_SCALE;
+		this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 		this.scale.pageAlignVertically = true;
 		this.scale.pageAlignHorizontally = true;
 
