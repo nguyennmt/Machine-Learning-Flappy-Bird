@@ -49,9 +49,7 @@ GeneticAlgorithm.prototype = {
 	// to calculate an output action according to the inputs
 	activateBrain : function(bird, target){		
 		// input 1: the horizontal distance between the bird and the target
-		// 2019 09 06 TelescopeUser: normalize(bird.x - target.x + 800, 800)
-		// var targetDeltaX = this.normalize(target.x, 700) * this.SCALE_FACTOR;
-		var targetDeltaX = this.normalize(bird.x - target.x + 800, 800) * this.SCALE_FACTOR;
+		var targetDeltaX = this.normalize(target.x, 700) * this.SCALE_FACTOR;
 		
 		// input 2: the height difference between the bird and the target
 		var targetDeltaY = this.normalize(bird.y - target.y, 800) * this.SCALE_FACTOR;
