@@ -88,7 +88,9 @@ GeneticAlgorithm.prototype = {
 			if (i == this.top_units){
 				// offspring is made by a crossover of two best winners
 				parentA = Winners[0].toJSON();
-				parentB = Winners[1].toJSON();
+				console.log(parentA);
+				parentB = Winners[1].toJSON();				
+				console.log(parentB);
 				offspring = this.crossOver(parentA, parentB);
 
 			} else if (i < this.max_units-2){
